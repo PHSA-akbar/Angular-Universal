@@ -1,0 +1,40 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: 'Roboto', sans-serif; }
+
+.cheif-header {
+    background-color: lightgray;
+    height:60px; 
+    padding: 40px;
+}
+
+.cheif-main {
+    background-color: lightgrey; 
+    margin-top: 10px; 
+    padding-bottom: 10px;
+}
+
+.cheif-card-row {
+    min-height: 250px;
+}
+
+.chief-card {
+    margin-top:10px;
+    margin-left:10px;
+}
+
+.cheif-sidebar {
+    background-color: aqua;
+    margin-left: 10px;
+}
+
+.cheif-sidebar-card {
+    height: 100% ; 
+    margin:10px;
+}
+
+/*
+.chief-card:nth-child(2n) {
+    margin-right:10px;
+}*/

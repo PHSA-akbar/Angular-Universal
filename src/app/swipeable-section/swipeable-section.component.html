@@ -1,0 +1,12 @@
+<div class="md-content" (swipeleft)="swipe(null, $event.type);" (swiperight)="swipe(null, $event.type);">
+	<mat-tab-group mat-stretch-tabs [(selectedIndex)]="selectedIndex" (selectedIndexChange)="selectChange()">
+		<ng-container *ngFor="let tab of tabs">
+			<mat-tab [label]="tabNames[tab.id-1] " (swipeleft)="swipe(tab.id, $event.type)"
+				(swiperight)="swipe(tab.id, $event.type)">
+				<div style="height:300px;">
+					{{descs[tab.id - 1]}}
+				</div>
+			</mat-tab>
+		</ng-container>
+	</mat-tab-group>
+</div> 

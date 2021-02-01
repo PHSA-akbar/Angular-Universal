@@ -1,0 +1,50 @@
+<mat-sidenav-container fullscreen>
+
+  <mat-sidenav #start>
+      <mat-nav-list>
+
+          <a mat-list-item routerLink="/multi-column-layout">
+              <mat-icon>backup_table</mat-icon>
+              <span>Responsive Multi-Column Layout</span>
+          </a>
+
+          <a mat-list-item routerLink="/responsive-table">
+            <mat-icon>table_view</mat-icon>
+            <span>Responsive Table</span>
+          </a>
+
+          <a mat-list-item routerLink="/expandable-cards">
+              <mat-icon>aspect_ratio</mat-icon>
+              <span>Expandable Cards</span>
+          </a>
+
+          <a mat-list-item routerLink="/swipeable-section">
+              <mat-icon>swap_horizontal_circle</mat-icon>
+              <span>Swipe-able Section</span>
+          </a>
+      </mat-nav-list>
+
+  </mat-sidenav>
+
+  <mat-toolbar color="primary">
+      <button mat-icon-button (click)="start.open('mouse')">
+          <mat-icon>menu</mat-icon>
+      </button>
+  </mat-toolbar>
+
+  <router-outlet></router-outlet>
+
+</mat-sidenav-container>
+
+<!--div class="md-content" (swipeleft)="swipe(idx, $event.type);" (swiperight)="swipe(idx, $event.type);">
+	<mat-tab-group mat-stretch-tabs [(selectedIndex)]="selectedIndex" (selectedIndexChange)="selectChange()">
+		<ng-container *ngFor="let tab of tabs">
+			<mat-tab [label]="tabNames[tab.id-1] " (swipeleft)="swipe(tab.id, $event.type)"
+				(swiperight)="swipe(tab.id, $event.type)">
+				<div style="height:300px;">
+					{{descs[tab.id - 1]}}
+				</div>
+			</mat-tab>
+		</ng-container>
+	</mat-tab-group>
+</div--> 
